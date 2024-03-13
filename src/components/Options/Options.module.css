@@ -1,0 +1,11 @@
+.options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.optionsBtn {
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 5px;
+}
