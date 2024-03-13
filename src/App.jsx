@@ -11,6 +11,9 @@ function App() {
   });
 
   const totalFeedback = clicks.good + clicks.neutral + clicks.bad;
+  const positiveFeedback = Math.round(
+    ((clicks.good + clicks.neutral) / totalFeedback) * 100
+  );
 
   const updateFeedback = (feedbackType) => {
     if (feedbackType === "reset") {
@@ -34,6 +37,7 @@ function App() {
         neutral={clicks.neutral}
         bad={clicks.bad}
         totalFeedback={totalFeedback}
+        positiveFeedback={positiveFeedback}
       />
     </>
   );
